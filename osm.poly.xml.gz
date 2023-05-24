@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Rotas (Fluxos e veiculos) -->
+<routes>
+
+	<!-- Veiculos predefinidos pelo SUMO (vClass) -->
+	
+	<vType id="automovel" vClass="passenger"/>
+	<vType id="moto"  vClass="motorcycle"/>
+	<vType id="onibus"    vClass="bus"/>
+	<vType id="caminhao"  vClass="truck"/>
+	<vType id="reboque"  vClass="truck"/>
+	
+
+	
+	<!-- ver tabalea (passenger; taxi; bus; truck; trailer; motorcycle; bicycle) -->
+	
+<!-- Fluxo das 17:00 as 17:10 -->
+	<flow id="F1" color="0,0,255" begin="0" end="600" period="55" type="automovel" departlane = "random" from="a4" to="a1"/>
+	<flow id="F2" color="0,0,255" begin="0" end="600" period="32" type="automovel" departlane = "random" from="a4" to="a3"/>
+	<flow id="F3" color="0,0,255" begin="0" end="600" period="38" type="automovel" departlane = "random" from="a4" to="a6"/>
+	<flow id="F4" color="0,0,255" begin="0" end="600" period="19" type="automovel" departlane = "random" from="a5" to="a3"/>
+	<flow id="F5" color="0,0,255" begin="0" end="600" period="60" type="automovel" departlane = "random" from="a5" to="a1"/>
+	<flow id="F6" color="0,0,255" begin="0" end="600" period="150" type="automovel" departlane = "random" from="a2" to="a6"/>
+	<flow id="F7" color="0,0,255" begin="0" end="600" period="120" type="automovel" departlane = "random" from="a2" to="a1"/>
+
+	<flow id="F8" color="255,0,0" begin="0" end="600" period="40" type="moto" departlane = "random" from="a4" to="a1"/>
+	<flow id="F9" color="255,0,0" begin="0" end="600" period="25" type="moto" departlane = "random" from="a4" to="a3"/>	
+	<flow id="F10" color="255,0,0" begin="0" end="600" period="27" type="moto" departlane = "random" from="a4" to="a6"/>	
+	<flow id="F11" color="255,0,0" begin="0" end="600" period="32" type="moto" departlane = "random" from="a5" to="a3"/>	
+	<flow id="F12" color="255,0,0" begin="0" end="600" period="46" type="moto" departlane = "random" from="a5" to="a1"/>	
+	<flow id="F13" color="255,0,0" begin="0" end="600" period="200" type="moto" departlane = "random" from="a2" to="a6"/>	
+	<flow id="F14" color="255,0,0" begin="0" end="600" period="200" type="moto" departlane = "random" from="a2" to="a1"/>	
+
+	<flow id="F15" color="255,0,255" begin="0" end="600" period="600" type="caminhao" departlane = "random" from="a4" to="a1"/>	
+	<flow id="F16" color="255,0,255" begin="0" end="600" period="600" type="caminhao" departlane = "random" from="a4" to="a6"/>	
+
+
+<!-- Fluxo das 17:10 as 17:20 -->
+	<flow id="F17" color="0,0,255" begin="600" end="1200" period="55" type="automovel" departlane = "random" from="a4" to="a1"/>
+	<flow id="F18" color="0,0,255" begin="600" end="1200" period="32" type="automovel" departlane = "random" from="a4" to="a3"/>
+	<flow id="F19" color="0,0,255" begin="600" end="1200" period="38" type="automovel" departlane = "random" from="a4" to="a6"/>
+	<flow id="F20" color="0,0,255" begin="600" end="1200" period="150" type="automovel" departlane = "random" from="a2" to="a6"/>
+	<flow id="F21" color="0,0,255" begin="600" end="1200" period="120" type="automovel" departlane = "random" from="a2" to="a1"/>
+
+	<flow id="F22" color="255,0,0" begin="600" end="1200" period="40" type="moto" departlane = "random" from="a4" to="a1"/>
+	<flow id="F23" color="255,0,0" begin="600" end="1200" period="25" type="moto" departlane = "random" from="a4" to="a3"/>	
+	<flow id="F24" color="255,0,0" begin="600" end="1200" period="27" type="moto" departlane = "random" from="a4" to="a6"/>	
+	<flow id="F25" color="255,0,0" begin="600" end="1200" period="200" type="moto" departlane = "random" from="a2" to="a6"/>	
+	<flow id="F26" color="255,0,0" begin="600" end="1200" period="200" type="moto" departlane = "random" from="a2" to="a1"/>	
+
+	<flow id="F27" color="255,0,255" begin="600" end="1200" period="600" type="caminhao" departlane = "random" from="a4" to="a1"/>	
+	
+	
+
+<!-- Fluxo das 17:20 as 17:30 -->
+	<flow id="F28" color="0,0,255" begin="1200" end="1800" period="55" type="automovel" departlane = "random" from="a4" to="a1"/>
+	<flow id="F29" color="0,0,255" begin="1200" end="1800" period="32" type="automovel" departlane = "random" from="a4" to="a3"/>
+	<flow id="F30" color="0,0,255" begin="1200" end="1800" period="38" type="automovel" departlane = "random" from="a4" to="a6"/>
+	<flow id="F31" color="0,0,255" begin="1200" end="1800" period="19" type="automovel" departlane = "random" from="a5" to="a3"/>
+	<flow id="F32" color="0,0,255" begin="1200" end="1800" period="60" type="automovel" departlane = "random" from="a5" to="a1"/>
+	<flow id="F33" color="0,0,255" begin="1200" end="1800" period="150" type="automovel" departlane = "random" from="a2" to="a6"/>
+	<flow id="F34" color="0,0,255" begin="1200" end="1800" period="120" type="automovel" departlane = "random" from="a2" to="a1"/>
+
+	<flow id="F35" color="255,0,0" begin="1200" end="1800" period="40" type="moto" departlane = "random" from="a4" to="a1"/>
+	<flow id="F36" color="255,0,0" begin="1200" end="1800" period="25" type="moto" departlane = "random" from="a4" to="a3"/>	
+	<flow id="F37" color="255,0,0" begin="1200" end="1800" period="27" type="moto" departlane = "random" from="a4" to="a6"/>	
+	<flow id="F38" color="255,0,0" begin="1200" end="1800" period="32" type="moto" departlane = "random" from="a5" to="a3"/>	
+	<flow id="F39" color="255,0,0" begin="1200" end="1800" period="46" type="moto" departlane = "random" from="a5" to="a1"/>	
+	<flow id="F40" color="255,0,0" begin="1200" end="1800" period="200" type="moto" departlane = "random" from="a2" to="a6"/>	
+	<flow id="F41" color="255,0,0" begin="1200" end="1800" period="200" type="moto" departlane = "random" from="a2" to="a1"/>	
+
+	<flow id="F42" color="255,0,255" begin="1200" end="1800" period="600" type="caminhao" departlane = "random" from="a4" to="a1"/>	
+	<flow id="F43" color="255,0,255" begin="1200" end="1800" period="600" type="caminhao" departlane = "random" from="a4" to="a6"/>	
+	<flow id="F44" color="255,0,255" begin="1200" end="1800" period="600" type="caminhao" departlane = "random" from="a5" to="a3"/>	
+
+	<flow id="F45" color="255,165,0" begin="1200" end="1800" period="10" type="reboque" departlane = "random" from="a4" to="a6"/>	
+	
+</routes>
