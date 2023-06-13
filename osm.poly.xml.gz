@@ -13,7 +13,7 @@
 	
 
 	
-	<!-- ver tabalea (passenger; taxi; bus; truck; trailer; motorcycle; bicycle) -->
+	<!-- (passenger; taxi; bus; truck; trailer; motorcycle; bicycle) -->
 	
 <!-- Fluxo das 17:00 as 17:10 -->
 	<flow id="F1" color="0,0,255" begin="0" end="600" period="55" type="automovel" departlane = "random" from="a4" to="a1"/>
